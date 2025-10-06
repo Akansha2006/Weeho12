@@ -93,9 +93,9 @@ const About = () => {
       <section className="about-hero">
         <div className="about-hero-content">
           <h1 className="about-hero-title">ABOUT WEEHO</h1>
-          <p className="about-hero-subtitle">The Electro Vibe Experience</p>
+          <p className="about-hero-subtitle">The Euphoric Art Experience</p>
           <p className="about-hero-description">
-            Discover the story behind the music, the passion that drives us, and the vision that shapes our sound.
+           Discover the story behind the performances, the passion that inspires us, and the vision that drives Weeho to celebrate creativity and connect artists through the power of expression.
           </p>
         </div>
       </section>
@@ -107,19 +107,13 @@ const About = () => {
             <div className="story-text">
               <h2>Our Story</h2>
               <p>
-                Born from a shared passion for electronic music and live performance, Hnband emerged in 2019 
-                as a revolutionary force in the modern music scene. What started as late-night studio sessions 
-                between three friends has evolved into a global phenomenon that captivates audiences worldwide.
+               Weeho – Euphoric Moments was created with one belief — every artist deserves to be seen and celebrated. Many talented individuals lack a genuine space to share their art, especially beginners, students, or those from smaller towns.
               </p>
               <p>
-                Our journey began when Tailor Lachiri, fresh from touring with established acts, met Alex Martinez 
-                and Sam Rodriguez at a underground electronic music festival. The chemistry was instant, and within 
-                weeks, we were crafting the signature sound that would define our musical identity.
+                Born from the idea that “Talent exists everywhere, but platforms don’t,” Weeho offers an inclusive digital stage for artists to perform, grow, and gain recognition.
               </p>
               <p>
-                Today, we're proud to have performed on stages across the globe, from intimate club venues to 
-                massive festival grounds, always staying true to our core mission: creating music that moves both 
-                body and soul.
+               Weeho is more than just a platform — it’s a movement dedicated to nurturing creativity, building confidence, and fostering a strong artistic community. It encourages artists to express themselves freely, connect with others, and grow in an inclusive digital space. Through every performance, Weeho aims to inspire and empower individuals, giving each artist the chance to experience their own euphoric moment.
               </p>
             </div>
             <div className="story-image">
@@ -194,17 +188,14 @@ const About = () => {
             <div className="mission">
               <h3>Our Mission</h3>
               <p>
-                To create innovative electronic music that bridges the gap between digital artistry and 
-                human emotion, delivering unforgettable experiences that inspire and connect people across 
-                all walks of life.
+                To provide an open and inclusive platform for budding artists to perform, gain digital recognition, collaborate with others, and promote appreciation for diverse and authentic art forms.
+
               </p>
             </div>
             <div className="vision">
               <h3>Our Vision</h3>
               <p>
-                To be recognized as pioneers in the electronic music scene, setting new standards for 
-                creativity, performance quality, and fan engagement while remaining true to our authentic 
-                sound and values.
+                To create an accessible and supportive platform where creativity thrives, talent is celebrated, and artistic expression is encouraged without boundaries. 
               </p>
             </div>
           </div>
@@ -216,7 +207,7 @@ const About = () => {
         <div className="container">
           <div className="cta-content">
             <h2>Ready to Experience the Vibe?</h2>
-            <p>Join thousands of fans who have already discovered the Hnband experience.</p>
+            {/* <p>Join thousands of fans who have already discovered the Hnband experience.</p> */}
             <div className="cta-buttons">
               <Link to="/#contact" className="btn-primary">Get In Touch</Link>
               {/* <a href="#tickets" className="btn-secondary">Buy Tickets</a> */}

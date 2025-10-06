@@ -116,7 +116,7 @@ body {
 /* Hero Section */
 .hero {
   height: 100vh;
-  background-image: url('../assets/hero-drummer.jpg');
+  background-image: url('https://weeho.in/wp-content/uploads/2021/09/pic1.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
