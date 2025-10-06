@@ -27,11 +27,13 @@
 }
 
 .logo-image {
-  height: 40px;
-  width: auto;
+  height: 50px;  /* pehle 40px tha */
+  width: auto;   /* width auto rakho taaki aspect ratio maintain ho */
   object-fit: contain;
   transition: transform 0.3s ease;
 }
+
+
 
 .logo-image:hover {
   transform: scale(1.05);
@@ -102,23 +104,23 @@
   cursor: pointer;
 }
 
+
 /* Blog Hero Section */
 .blog-hero {
+  text-align: center;
   background: linear-gradient(135deg, #2a1f3d, #1a1427);
-  padding: 8rem 0 4rem;
+  padding: 8rem 2rem 4rem;
   margin-top: 80px;
-  position: relative;
 }
 
-.blog-hero-content {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 2rem;
-  display: flex;
-  align-items: center;
-  gap: 3rem;
+.blog-hero-title {
+  font-size: 4rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center; /* centre align */
 }
-
 .blog-hero-icon {
   width: 120px;
   height: 120px;
@@ -136,12 +138,14 @@
 }
 
 .blog-hero-title {
+  text-align: center;
   font-size: 4rem;
   font-weight: bold;
   margin-bottom: 1rem;
   color: #ffffff;
   text-transform: uppercase;
   letter-spacing: 2px;
+  
 }
 
 .blog-breadcrumb {
@@ -280,6 +284,38 @@
   justify-content: center;
   flex-wrap: wrap;
 }
+
+
+
+.blog-detail {
+  background: rgba(0,0,0,0.95);
+  color: #fff;
+  padding: 2rem;
+  margin: 2rem 0;
+  border-radius: 15px;
+  z-index: 100;      /* add this */
+  position: relative; /* add this */
+}
+
+
+.blog-detail button {
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 25px;
+  background: #ff6b6b;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.blog-detail button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 107, 107, 0.3);
+}
+
+
 
 /* Footer */
 .footer {

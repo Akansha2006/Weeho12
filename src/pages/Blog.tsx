@@ -2,7 +2,10 @@ import { Link } from 'react-router-dom';
 import './Blog.css';
 import weehoLogo from '@/assets/weeho-logo.png';
 
+import { useState } from 'react'; // agar already import nahi hai
 const Blog = () => {
+
+const [selectedBlog, setSelectedBlog] = useState(null); // selected blog state
   const blogPosts = [
     {
       id: 1,
@@ -130,6 +133,19 @@ At the tail end of the evening, Sudipta spoke a few words on the power of music 
 It was an event carrying a lot of magic to it, moments that will never be forgotten. Indeed, to treat talent well, be it by Weeho or even all of us, nights like this would characterize the best example how music can only unite us all. May such nights come and come again, filled with joy, with interconnection and timeless melodies!`
     }
   ];
+ const handleCardClick = (post) => {
+  setSelectedBlog(post); // card click hone par select kar do
+
+  // scroll to blog detail
+  setTimeout(() => {
+    const detailSection = document.querySelector('.blog-detail');
+    if (detailSection) {
+      detailSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, 100); // thoda delay tak state update ho jaye
+};
+
+
 
   return (
     <div className="blog-page">
@@ -156,11 +172,11 @@ It was an event carrying a lot of magic to it, moments that will never be forgot
       {/* Hero Section */}
       <section className="blog-hero">
         <div className="blog-hero-content">
-          <h1 className="blog-hero-title">Our Blog</h1>
-          <p className="blog-hero-subtitle">Stories, Events & Musical Journeys</p>
+          <h1 className="blog-hero-title" >Our Blog</h1>
+          {/* <p className="blog-hero-subtitle">Stories, Events & Musical Journeys</p>
           <p className="blog-hero-description">
             Discover the magic behind our events, meet our talented performers, and dive into the world of music and poetry.
-          </p>
+          </p> */}
         </div>
       </section>
 
@@ -169,7 +185,12 @@ It was an event carrying a lot of magic to it, moments that will never be forgot
         <div className="container">
           <div className="blog-grid">
             {blogPosts.map((post) => (
-              <article key={post.id} className="blog-card">
+             <article 
+  key={post.id} 
+  className="blog-card"
+  onClick={() => handleCardClick(post)} // ye line add karo
+>
+
                 <div className="blog-card-image">
                   <div className="blog-image-placeholder">
                     🎵
@@ -190,6 +211,18 @@ It was an event carrying a lot of magic to it, moments that will never be forgot
           </div>
         </div>
       </section>
+      {selectedBlog && (
+  <section className="blog-detail">
+    <div className="container">
+      <h2>{selectedBlog.title}</h2>
+      <p><strong>Date:</strong> {selectedBlog.date}</p>
+      <p><strong>Performer:</strong> {selectedBlog.performer}</p>
+      <div>{selectedBlog.content}</div>
+      <button className="btn-primary" onClick={() => setSelectedBlog(null)}>Close</button>
+    </div>
+  </section>
+)}
+
 
       {/* Call to Action */}
       <section className="blog-cta">
@@ -210,10 +243,10 @@ It was an event carrying a lot of magic to it, moments that will never be forgot
         <div className="footer-content">
           <div className="footer-section">
             <h4>CONTACT INFO</h4>
-            <p>📍 333 Middle Winchendon Rd,</p>
-            <p>Rindge, NH 03461</p>
-            <p>📞 125-711-811 | 125-668-886</p>
-            <p>✉️ Support.music@gmail.com</p>
+            <p>📍 Simtrak Solutions,</p>
+            <p>JBS Haldane Avenue, Kolkata 700046</p>
+            <p>📞 (+91) 988 358 5647</p>
+            <p>✉️ contact@weeho.in</p>
           </div>
           <div className="footer-section">
             <h4>QUICK LINKS</h4>

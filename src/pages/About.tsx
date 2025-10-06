@@ -92,7 +92,7 @@ const About = () => {
       {/* Hero Section */}
       <section className="about-hero">
         <div className="about-hero-content">
-          <h1 className="about-hero-title">ABOUT HNBAND</h1>
+          <h1 className="about-hero-title">ABOUT WEEHO</h1>
           <p className="about-hero-subtitle">The Electro Vibe Experience</p>
           <p className="about-hero-description">
             Discover the story behind the music, the passion that drives us, and the vision that shapes our sound.
@@ -148,7 +148,7 @@ const About = () => {
       <section className="why-choose-us">
         <div className="container">
           <div className="section-header">
-            <h2>Why Choose Hnband</h2>
+            <h2>Why Choose Weeho</h2>
             <p>Discover what makes us different from the rest</p>
           </div>
           <div className="features-grid">
@@ -164,7 +164,7 @@ const About = () => {
       </section>
 
       {/* Team Section */}
-      <section className="team">
+      {/* <section className="team">
         <div className="container">
           <div className="section-header">
             <h2>Meet The Band</h2>
@@ -185,7 +185,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Mission & Vision Section */}
       <section className="mission-vision">
@@ -219,7 +219,7 @@ const About = () => {
             <p>Join thousands of fans who have already discovered the Hnband experience.</p>
             <div className="cta-buttons">
               <Link to="/#contact" className="btn-primary">Get In Touch</Link>
-              <a href="#tickets" className="btn-secondary">Buy Tickets</a>
+              {/* <a href="#tickets" className="btn-secondary">Buy Tickets</a> */}
             </div>
           </div>
         </div>
@@ -230,10 +230,10 @@ const About = () => {
         <div className="footer-content">
           <div className="footer-section">
             <h4>CONTACT INFO</h4>
-            <p>📍 333 Middle Winchendon Rd,</p>
-            <p>Rindge, NH 03461</p>
-            <p>📞 125-711-811 | 125-668-886</p>
-            <p>✉️ Support.music@gmail.com</p>
+            <p>📍 Simtrak Solutions,</p>
+            <p>JBS Haldane Avenue, Kolkata 700046</p>
+            <p>📞 (+91) 988 358 5647</p>
+            <p>✉️ contact@weeho.in</p>
           </div>
           <div className="footer-section">
             <h4>QUICK LINKS</h4>

@@ -97,7 +97,7 @@ const Index = () => {
       </section>
 
       {/* Discography Section */}
-      <section id="albums" className="discography">
+      {/* <section id="albums" className="discography">
         <div className="section-header">
           <p className="section-subtitle">Our Discography</p>
           <h2 className="section-title">NEWEST ALBUMS & SINGLES.</h2>
@@ -116,7 +116,7 @@ const Index = () => {
             🎵 BUY ON ITUNES
           </a>
         </div>
-      </section>
+      </section> */}
 
       {/* Contact Section */}
       <section id="contact" className="contact">
@@ -166,10 +166,10 @@ const Index = () => {
         <div className="footer-content">
           <div className="footer-section">
             <h4>CONTACT INFO</h4>
-            <p>📍 333 Middle Winchendon Rd,</p>
-            <p>Rindge, NH 03461</p>
-            <p>📞 125-711-811 | 125-668-886</p>
-            <p>✉️ Support.music@gmail.com</p>
+            <p>📍 Simtrak Solutions,</p>
+            <p>JBS Haldane Avenue, Kolkata 700046</p>
+            <p>📞 (+91) 988 358 5647</p>
+            <p>✉️ contact@weeho.in</p>
           </div>
           <div className="footer-section">
             <h4>QUICK LINKS</h4>
