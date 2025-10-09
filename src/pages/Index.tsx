@@ -50,8 +50,8 @@ const Index = () => {
         <ul className="nav-menu">
           <li><a href="#home" className="active">HOME</a></li>
           <li><Link to="/about">ABOUT</Link></li>
-          <li><a href="#programs">PROGRAMS</a></li>
-          <li><a href="#performance">PERFORMANCE</a></li>
+          {/* <li><a href="#programs">PROGRAMS</a></li> */}
+          {/* <li><a href="#performance">PERFORMANCE</a></li> */}
           <li><a href="#book-event">BOOK AN EVENT</a></li>
           <li><Link to="/blog">BLOG</Link></li>
           <li><a href="#contact">CONTACT</a></li>

@@ -1,4 +1,6 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+import { useEffect } from 'react';
 import './About.css';
 import artistImage from '@/assets/artist-guitar.jpg';
 import heroImage from '@/assets/hero-drummer.jpg';
@@ -66,6 +68,11 @@ const About = () => {
       icon: "🌍"
     }
   ];
+  // Scroll to top whenever Blog page loads
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
 
   return (
     <div className="about-page">
@@ -79,11 +86,12 @@ const About = () => {
         <ul className="nav-menu">
           <li><Link to="/">HOME</Link></li>
           <li><Link to="/about" className="active">ABOUT</Link></li>
-          <li><a href="/#programs">PROGRAMS</a></li>
-          <li><a href="/#performance">PERFORMANCE</a></li>
+          {/* <li><a href="/#programs">PROGRAMS</a></li> */}
+          {/* <li><a href="/#performance">PERFORMANCE</a></li> */}
           <li><a href="/#book-event">BOOK AN EVENT</a></li>
           <li><Link to="/blog">BLOG</Link></li>
-          <li><a href="/#contact">CONTACT</a></li>
+        <li><Link smooth to="/#contact">CONTACT</Link></li>
+
         </ul>
         <a href="#book-event" className="btn-primary">BOOK AN EVENT</a>
         <button className="menu-toggle">☰</button>

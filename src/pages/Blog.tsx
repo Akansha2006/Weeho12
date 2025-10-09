@@ -1,4 +1,8 @@
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
+import { useEffect } from 'react';
+
+
 import './Blog.css';
 import weehoLogo from '@/assets/weeho-logo.png';
 
@@ -133,6 +137,10 @@ At the tail end of the evening, Sudipta spoke a few words on the power of music 
 It was an event carrying a lot of magic to it, moments that will never be forgotten. Indeed, to treat talent well, be it by Weeho or even all of us, nights like this would characterize the best example how music can only unite us all. May such nights come and come again, filled with joy, with interconnection and timeless melodies!`
     }
   ];
+  // Scroll to top whenever Blog page loads
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
  const handleCardClick = (post) => {
   setSelectedBlog(post); // card click hone par select kar do
 
@@ -159,11 +167,12 @@ It was an event carrying a lot of magic to it, moments that will never be forgot
         <ul className="nav-menu">
           <li><Link to="/">HOME</Link></li>
           <li><Link to="/about">ABOUT</Link></li>
-          <li><a href="/#programs">PROGRAMS</a></li>
-          <li><a href="/#performance">PERFORMANCE</a></li>
+          {/* <li><a href="/#programs">PROGRAMS</a></li> */}
+          {/* <li><a href="/#performance">PERFORMANCE</a></li> */}
           <li><a href="/#book-event">BOOK AN EVENT</a></li>
           <li><Link to="/blog" className="active">BLOG</Link></li>
-          <li><a href="/#contact">CONTACT</a></li>
+       <li><Link smooth to="/#contact">CONTACT</Link></li>
+
         </ul>
         <a href="#book-event" className="btn-primary">BOOK AN EVENT</a>
         <button className="menu-toggle">☰</button>
