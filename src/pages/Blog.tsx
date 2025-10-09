@@ -1,6 +1,9 @@
 // import { Link } from 'react-router-dom';
 import { HashLink as Link } from 'react-router-hash-link';
 import { useEffect } from 'react';
+import blogImage1 from '@/assets/blog1.jpg';
+import blogImage2 from '@/assets/blog2.jpg';
+import blogImage3 from '@/assets/blog3.jpg';
 
 
 import './Blog.css';
@@ -15,6 +18,7 @@ const [selectedBlog, setSelectedBlog] = useState(null); // selected blog state
       id: 1,
       title: "A Night to Remember: Weeho's Magical Music Event",
       date: "November 19, 2024",
+      image: blogImage1,
       performer: "Ms. Anushka Sharma",
       excerpt: "Music is not merely a sound; it is an emotion's language—a bridge that connects hearts across cultures, beliefs, and geographies.",
       category: "Music Event",
@@ -56,6 +60,7 @@ Let's see this inspiration travel forward and celebrate the boundless power of m
       id: 2,
       title: "Harmony & Melody: Weeho Online Poetry Event",
       date: "September 28, 2024",
+      image: blogImage2,
       performer: "Ms. Tanisha Srivastava",
       excerpt: "Poetry, a conversation from heart-to-heart where word tells the feeling of oneself, but it connects with all the listener's.",
       category: "Poetry Event",
@@ -75,6 +80,8 @@ Beyond these all these moments we also have a conversation about the Women sexua
       id: 3,
       title: "Rhythmic Night: Weeho Online Music Event",
       date: "October 5, 2024",
+
+      image: blogImage3,
       performer: "Mr. Aryan",
       excerpt: "Music is the universal language of human emotion, connecting people across cultures and generations.",
       category: "Music Event",
@@ -94,6 +101,7 @@ He also tells about his journey and mindset of making his viral youtube cover so
       id: 4,
       title: "Vocal Vibes: Weeho Online Music Event",
       date: "October 19, 2024",
+      image: blogImage2,
       performer: "Mr. Jaivardhan Verma",
       excerpt: "Music is a great uniter. An incredible force. Something that people who differ on everything and anything else can have in common.",
       category: "Music Event",
@@ -117,6 +125,7 @@ At last he tells , after being a corporate employee for 11 years he shifted his 
       id: 5,
       title: "Weeho's Musical Night with Sudipta Ganguly: A Night to Remember",
       date: "October 26, 2024",
+      image: blogImage1,
       performer: "Mr. Sudipta Ganguly",
       excerpt: "Music is a magical force that can connect people, cross boundaries, and stir emotions.",
       category: "Music Event",
@@ -201,10 +210,9 @@ It was an event carrying a lot of magic to it, moments that will never be forgot
 >
 
                 <div className="blog-card-image">
-                  <div className="blog-image-placeholder">
-                    🎵
-                  </div>
-                </div>
+  <img src={post.image} alt={post.title} className="blog-image" />
+</div>
+
                 <div className="blog-card-content">
                   <div className="blog-meta">
                     <span className="blog-author">by Admin</span>

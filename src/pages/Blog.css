@@ -286,6 +286,12 @@
 }
 
 
+.blog-card-image img.blog-image {
+  width: 100%;
+  height: auto; /* height adjusts automatically */
+  border-radius: 8px;
+}
+
 
 .blog-detail {
   background: rgba(0,0,0,0.95);
