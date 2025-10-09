@@ -80,12 +80,12 @@ const Index = () => {
             <h3>About us</h3>
             <h2>The Euphoric Art Experience</h2>
             <p>
-             Weeho – Euphoric Moments is an inclusive and dynamic online platform that celebrates and promotes artistic talent across diverse forms. It provides a digital stage for emerging and passionate artists to perform, connect, and grow.
+             WeeHo – Euphoric Moments is an inclusive and dynamic online platform that celebrates and promotes artistic talent across diverse forms. It provides a digital stage for emerging and passionate artists to perform, connect, and grow.
             </p>
             <p>
-              Believing that every art form deserves recognition, Weeho creates opportunities for creators to shine beyond boundaries. It supports collaboration, creative expression, and appreciation for authentic talent — empowering artists to gain digital visibility and confidence.
+              Believing that every art form deserves recognition, WeeHo creates opportunities for creators to shine beyond boundaries. It supports collaboration, creative expression, and appreciation for authentic talent — empowering artists to gain digital visibility and confidence.
             </p>
-            <p>More than a platform, Weeho is a movement that nurtures creativity, community, and confidence — giving every artist their own euphoric moment.</p>
+            <p>More than a platform, WeeHo is a movement that nurtures creativity, community, and confidence — giving every artist their own euphoric moment.</p>
             <a href="#contact" className="btn-primary">CONTACT US</a>
           </div>
         </div>

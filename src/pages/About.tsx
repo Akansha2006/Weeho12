@@ -100,10 +100,10 @@ const About = () => {
       {/* Hero Section */}
       <section className="about-hero">
         <div className="about-hero-content">
-          <h1 className="about-hero-title">ABOUT WEEHO</h1>
+          <h1 className="about-hero-title">ABOUT WeeHo</h1>
           <p className="about-hero-subtitle">The Euphoric Art Experience</p>
           <p className="about-hero-description">
-           Discover the story behind the performances, the passion that inspires us, and the vision that drives Weeho to celebrate creativity and connect artists through the power of expression.
+           Discover the story behind the performances, the passion that inspires us, and the vision that drives WeeHo to celebrate creativity and connect artists through the power of expression.
           </p>
         </div>
       </section>
@@ -115,13 +115,13 @@ const About = () => {
             <div className="story-text">
               <h2>Our Story</h2>
               <p>
-               Weeho – Euphoric Moments was created with one belief — every artist deserves to be seen and celebrated. Many talented individuals lack a genuine space to share their art, especially beginners, students, or those from smaller towns.
+               WeeHo – Euphoric Moments was created with one belief — every artist deserves to be seen and celebrated. Many talented individuals lack a genuine space to share their art, especially beginners, students, or those from smaller towns.
               </p>
               <p>
-                Born from the idea that “Talent exists everywhere, but platforms don’t,” Weeho offers an inclusive digital stage for artists to perform, grow, and gain recognition.
+                Born from the idea that “Talent exists everywhere, but platforms don’t,” WeeHo offers an inclusive digital stage for artists to perform, grow, and gain recognition.
               </p>
               <p>
-               Weeho is more than just a platform — it’s a movement dedicated to nurturing creativity, building confidence, and fostering a strong artistic community. It encourages artists to express themselves freely, connect with others, and grow in an inclusive digital space. Through every performance, Weeho aims to inspire and empower individuals, giving each artist the chance to experience their own euphoric moment.
+               WeeHo is more than just a platform — it’s a movement dedicated to nurturing creativity, building confidence, and fostering a strong artistic community. It encourages artists to express themselves freely, connect with others, and grow in an inclusive digital space. Through every performance, WeeHo aims to inspire and empower individuals, giving each artist the chance to experience their own euphoric moment.
               </p>
             </div>
             <div className="story-image">
@@ -150,7 +150,7 @@ const About = () => {
       <section className="why-choose-us">
         <div className="container">
           <div className="section-header">
-            <h2>Why Choose Weeho</h2>
+            <h2>Why Choose WeeHo</h2>
             <p>Discover what makes us different from the rest</p>
           </div>
           <div className="features-grid">
